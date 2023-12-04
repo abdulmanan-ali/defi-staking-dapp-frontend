@@ -63,7 +63,7 @@ export default function Farms() {
             <source className="rounded d-flex align-items-center  " type="video/webm" src="bannervid.webm" width='1400px' height='500px' />
           </video>
         </div>
-        <h5>Fetching Details</h5>
+        <h5>Fetching Details...</h5>
       </main>
     </div>
   )
@@ -103,6 +103,8 @@ export default function Farms() {
             <button type="button" className="btn btn-md stakestyle" onClick={() => showModal(i)}>
               Open Pool
             </button>
+
+            {/* first model start */}
             <div id={"autorunmodal" + i} className="modal fade" role="dialog">
               <div className="modal-dialog modal-dialog-centered">
                 <div className="modal-content" style={{ background: '#05014a' }}>
